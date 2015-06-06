@@ -1,5 +1,8 @@
 # Compiled source #
 ###################
+bin/
+libs/
+gen/
 
 *.com
 *.class
