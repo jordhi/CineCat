@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cat.jordihernandez.cinemacat.InfoFilmsXCinema" >
+
+    <item
+        android:id="@+id/InfoCineCat"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/infoCinecat"/>
+     <item 
+        android:id="@+id/SortirApp"
+        android:title="@string/sortir"
+        android:visible="false"/>
+
+</menu>

@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cat.jordihernandez.cinecat.InfoFilm" >
+
+     <LinearLayout
+         android:id="@+id/linearDades"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearDades3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgIFcartell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="128dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_imatge" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/linearDades4"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2"
+	    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvIFTitol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgIFcartell"
+        android:layout_toRightOf="@+id/imgIFcartell"
+        android:layout_weight="3"
+        android:padding="3dp"
+        android:text="Títol"
+        android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/txvIFAny"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/txvIFTitol"
+         android:layout_below="@+id/txvIFTitol"
+         android:layout_weight="3"
+         android:padding="3dp"
+         android:text="Any" />
+     
+    <TextView
+        android:id="@+id/txvIFversio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvIFTitol"
+        android:layout_toRightOf="@+id/txvIFAny"
+        android:padding="3dp"
+        android:text="versió" />
+
+    <TextView
+        android:id="@+id/txvIFDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvIFTitol"
+        android:layout_below="@+id/txvIFversio"
+        android:padding="3dp"
+        android:text="Director" />
+
+    <TextView
+        android:id="@+id/txvIFQualif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvIFDirector"
+        android:layout_toRightOf="@+id/imgIFcartell"
+        android:padding="3dp"
+        android:text="Qualificació" />
+    </LinearLayout>
+ </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearDades2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linearDades"
+      android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvIFInterprets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Intèrprets"
+        android:textStyle="italic" />
+	
+    <Button
+        android:id="@+id/txvIFSinopsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txvIFInterprets"
+        android:background="@drawable/shapeinvers"
+        android:clickable="true"
+        android:minHeight="30dp"
+        android:onClick="clickSinopsi"
+        android:overScrollMode="ifContentScrolls"
+        android:padding="3dp"
+        android:text="Llegir la sinopsi" />
+    
+	<TextView
+	    android:id="@+id/txvLlocsVeure"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="2dp"
+	    android:text="Cinemes on veure-la:"
+	    android:textColor="@color/red" />
+
+ </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvIFSessioCine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearDades2"
+        android:fadingEdge="vertical"
+        android:paddingTop="3dp" >
+
+    </ListView>
+  
+</RelativeLayout>
+

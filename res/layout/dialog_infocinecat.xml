@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/txvActualitzacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:text="Actualitzat:" />
+
+    <TextView
+        android:id="@+id/txvDataAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/txvActualitzacio"
+        android:gravity="right"
+        android:hint="DATA"
+        android:padding="3dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txvActualitzacio"
+        android:layout_below="@+id/txvActualitzacio"
+        android:padding="3dp"
+        android:text="Fonts" />
+
+    <TextView
+        android:id="@+id/txvDadesFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txvDataAct"
+        android:layout_below="@id/txvDataAct"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/txvFont"
+        android:gravity="right"
+        android:padding="3dp"
+        android:text="@string/dadesFont"
+        android:textColor="@color/red"
+        android:textStyle="italic" />
+
+</RelativeLayout>

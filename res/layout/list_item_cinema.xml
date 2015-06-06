@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shapecinemes" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/txvPCNomCinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="nom cinema"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvPCNomCinema" >
+
+        <TextView
+            android:id="@+id/txvLocalitat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="localitat"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/txvComarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="comarca"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

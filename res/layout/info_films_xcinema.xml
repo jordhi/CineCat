@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_light"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cat.jordihernandez.cinecat.InfoFilmsXCinema" >
+
+    <ImageButton
+        android:id="@+id/imgPCtoMaps"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/lltPCDadesCinema"
+        android:onClick="goToMaps"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gmaps" />
+
+    <LinearLayout
+        android:id="@+id/lltPCDadesCinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/imgPCtoMaps"
+        android:background="@drawable/shapeinvers"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txvPCNomCinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Cinema"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txvPCAdreca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Adreça" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvPCSessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lltPCDadesCinema"
+        android:layout_margin="5dp"
+        android:text="Sessions"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lltPCDadesFilms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/imgPCtoMaps"
+        android:layout_below="@id/txvPCSessions"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lsvPCFilms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

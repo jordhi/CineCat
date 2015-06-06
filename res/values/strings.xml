@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CineCat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="infoCinecat">Sobre CineCat</string>
+    <string name="title_activity_cinemes">Cinemes</string>
+    <string name="connection_error">Error de connexió</string>
+    <string name="xml_error">Error de XML</string>
+    <string name="title_activity_splash_cinema_cat">CineCat</string>
+    <string name="title_activity_films">Pel·lícules</string>
+    <string name="title_activity_cicles">Cicles</string>
+    <string name="dadesFont">Generalitat de Catalunya\nDepartament de Cultura\nPolítica Lingüística\n\nImatges: iSotck</string>
+    <string name="title_activity_info_films_xcinema">Pel·licules al cinema</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info_film">Pel·lícula</string>
+    <string name="title_activity_info_clicles">Informació cicles</string>
+    <string name="imgFonts">iStock</string>
+    <string name="sortir">Sortir</string>
+
+</resources>
