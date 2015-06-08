@@ -1,3 +1,22 @@
+/*
+Copyright (C) <2015>  <Jordi Hernandez>
+Twitter: @jordikarate 
+Web: http://www.jordihernandez,cat
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package cat.jordihernandez.cinecat;
 
 import java.util.List;
@@ -104,64 +123,5 @@ public class ListFilmAdapter extends BaseAdapter {
 		
 		return v;
 	}
-/*
-	private class DownloadImgCartell extends AsyncTask<String, Void, Bitmap> {
-		private final WeakReference imageViewReference;
-		
-	
-		public DownloadImgCartell(ImageView imageView) {
-			imageViewReference = new WeakReference(imageView);
-		}
-		
-	    @Override
-	    protected Bitmap doInBackground(String... urls) {
-   	
-	    	Log.d("FILM","descarrega imatge " + urls[0]);
-	    	
-	       return loadImgCartell(urls[0]);
-	        
-	        
-	    }
-*/
-	/*
-	    @Override
-	    protected void onPostExecute(Bitmap result) {  
-	    	if (isCancelled()) {
-				result = null;
-			}
 
-			if (imageViewReference != null) {
-				ImageView imageView = (ImageView) imageViewReference.get();
-				if (imageView != null) {
-
-					if (result != null) {
-						imageView.setImageBitmap(result);
-					} else {
-						imageView.setImageDrawable(imageView.getContext().getResources()
-								.getDrawable(R.drawable.ic_launcher));
-					}
-				}
-
-			}
-	    }
-	}
-	*/
-/*	private Bitmap loadImgCartell(String imageHttpAddress) {
-        URL imageUrl = null;
-        try {
-            imageUrl = new URL(imageHttpAddress);
-            HttpURLConnection conn = (HttpURLConnection) imageUrl.openConnection();
-            conn.setReadTimeout(20000);
-            conn.setConnectTimeout(15000);
-    	    conn.setRequestMethod("GET");
-    	    conn.setDoInput(true);
-            conn.connect();
-            return BitmapFactory.decodeStream(conn.getInputStream());
-        } catch (IOException e) {
-            Toast.makeText(activity, "Error cargando la imagen: "+e.getMessage(), Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        }
-        return null;
-    }
-*/
 }

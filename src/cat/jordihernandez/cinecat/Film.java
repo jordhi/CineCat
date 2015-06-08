@@ -1,23 +1,23 @@
+/*
+Copyright (C) <2015>  <Jordi Hernandez>
+Twitter: @jordikarate 
+Web: http://www.jordihernandez,cat
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package cat.jordihernandez.cinecat;
-
-
-/*<FILM>
-	<IDFILM>28166</IDFILM>
-	<PRIORITAT>100</PRIORITAT>
-	<TITOL>Samba</TITOL>
-	<SITUACIO>--</SITUACIO>
-	<ANY>2014</ANY>
-	<CARTELL>samba.jpg</CARTELL>
-	<ORIGINAL>Samba</ORIGINAL>
-	<DIRECCIO>Olivier Nakache i Eric Toledano</DIRECCIO>
-	<INTERPRETS>Omar Sy, Charlotte Gainsbourg, Tahar Rahim, Izia Higelin, Yilin Yang, Jules Abel Logel, Issaka Sawadogo</INTERPRETS>
-	<SINOPSI>Una dona que ha hagut de deixar la seva feina a causa de l’estrès, s’apunta com a voluntària a una ONG que presta ajut a persones immigrades. Un dia coneix a Samba, un atractiu senegalès amb tendència a posar-se en embolics.</SINOPSI>
-	<VERSIO>Doblada i VOSC</VERSIO>
-	<QUALIFICACIO>Apta per a tots els públics</QUALIFICACIO>
-	<TRAILER>tEhsiog_0JE</TRAILER>
-	<WEB>--</WEB>
-	<ESTRENA>27/02/2015</ESTRENA>
-</FILM>*/
 
 public class Film {
 	private String id, prioritat, titol, situacio, any, cartell, original, direccio, interprets,

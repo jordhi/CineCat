@@ -1,3 +1,22 @@
+/*
+Copyright (C) <2015>  <Jordi Hernandez>
+Twitter: @jordikarate 
+Web: http://www.jordihernandez,cat
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package cat.jordihernandez.cinecat;
 
 import java.util.ArrayList;
@@ -108,71 +127,7 @@ public class Films extends Activity {
 	
 	
 	
-	// Implementation of AsyncTask used to download XML feed from cinemes.xml.
-/*	private class DownloadXmlTask extends AsyncTask<String, Void, Void> {
-	    @Override
-	    protected Void doInBackground(String... urls) {
-	    	Log.d("FILM","URL: " + urls[0]);
-	        try {
-	            loadXmlFromNetwork(urls[0]);
-	        } catch (IOException e) {
-	        	e.getStackTrace();
-	        }
-			return null;
-	    }
 
-	    @Override
-	    protected void onPostExecute(Void v) {  
-	    	    	
-	    	//Carregar el layout i innjectar el Listview de cinemes
-	    	int s = llista_films.size();
-	    	Log.d("FILM","num pelis: "+ s);
-	    	ListFilmAdapter adapter = new ListFilmAdapter(llista_films, act);
-	    	lstView_films.setAdapter(adapter);
-	    }
-	}
-	*/
-	
-	
-	// Uploads XML from stackoverflow.com, parses it, and combines it with
-	// HTML markup. Returns HTML string.
-/*	private void loadXmlFromNetwork(String urlString) throws IOException {
-	    InputStream stream = null;
-	    // Instantiate the parser
-	    FilmParseXML filmParseXML = new FilmParseXML();
-  	    	    
-	    try {
-	        stream = downloadUrl(urlString);     
-	        //get FILMS from parser
-	        llista_films =  filmParseXML.parse(stream,act);
-    
-	    } catch (XmlPullParserException e) {
-			e.printStackTrace();
-		} finally {
-	        if (stream != null) {
-	            stream.close();
-	        } 
-	     }
-	    
-	   	    
-	}*/
-
-	// Given a string representation of a URL, sets up a connection and gets
-	// an input stream.
-/*	private InputStream downloadUrl(String urlString) throws IOException {
-	    URL url = new URL(urlString);
-	    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-	    conn.setReadTimeout(10000);
-	    conn.setConnectTimeout(15000);
-	    conn.setRequestMethod("GET");
-	    conn.setDoInput(true);
-	    // Starts the query
-	    conn.connect();
-	   
-	    return conn.getInputStream();
-	}*/
-	
-	
 	
 	
 }

@@ -1,19 +1,25 @@
+/*
+Copyright (C) <2015>  <Jordi Hernandez>
+Twitter: @jordikarate 
+Web: http://www.jordihernandez,cat
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package cat.jordihernandez.cinecat;
 
-/*
- * <SESSIONS>
- * 	<IDFILM>28166</IDFILM>
- * 	<ses_id>1</ses_id>
- * 	<CINEID>37172</CINEID>
- * 	<TITOL>Samba</TITOL>
- * 	<ses_data>18/03/2015</ses_data>
- * 	<CINENOM>Cinesa Sant Cugat</CINENOM>
- * 	<LOCALITAT>Sant Cugat del Vallès</LOCALITAT>
- * 	<COMARCA>Vallès Occidental</COMARCA>
- * 	<CICLEID>1</CICLEID>
- * 	<ver>VOSC</ver>
- * </SESSIONS>
- */
+
 public class Sessio {
 	private String idfilm, sesid, cineid, titol, sesdata, cinenom, localitat, comarca, cicleid, ver;
 	private final String RES = "--";
