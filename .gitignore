@@ -3,6 +3,8 @@
 bin/
 libs/
 gen/
+build/
+.gradle/
 
 *.com
 *.class
