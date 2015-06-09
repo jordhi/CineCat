@@ -9,8 +9,8 @@ Doncs aquesta app és per tu!
 
 Tens diferents formes d'obtenir l'aplicació:
 
-* Compilar el teu propi programa
-* Descarregar-lo de [F-Droid](https://f-droid.org/repository/browse/)
+* Descarregar-la de [F-Droid](https://f-droid.org/app/cat.jordihernandez.cinecat)
+* Compilar-la tu mateix
 
 ## Compilació
 
